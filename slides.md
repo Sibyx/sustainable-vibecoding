@@ -58,7 +58,45 @@ They say experience is the best teacher. My GitHub history says experience is th
 -->
 
 ---
-layout: quote
+layout: center
+class: text-center
+---
+
+# Quick Workflow Survey
+
+<div class="text-xl mt-4 mb-8 opacity-80">
+
+I want to learn about **YOUR** workflow — help me calibrate this workshop to you.
+
+</div>
+
+<div class="grid grid-cols-2 gap-12 items-center">
+<div>
+
+<div class="text-4xl font-bold mb-4">menti.com</div>
+
+**[https://www.menti.com/al2u77w4v54j](https://www.menti.com/al2u77w4v54j)**
+
+</div>
+<div>
+
+<img src="/images/mentimeter_qr_code.png" class="h-48 mx-auto rounded" alt="Scan to join" />
+
+</div>
+</div>
+
+<div class="mt-6 text-sm opacity-60">
+
+10 questions. No wrong answers. Just tell me how you work.
+
+</div>
+
+<!--
+Pull out your phones — yes, really, I'm giving you permission to use your phone during a presentation. Go to menti.com or scan the QR code. This is NOT a test — there are literally no wrong answers. I want to learn about how you work: what tools you use, where your data lives, how you manage versions. This helps me calibrate the rest of the workshop to YOUR team specifically. Pick whatever honestly describes your workflow. There's also a funny option on each question — I won't judge you if you pick it. Actually, I might.
+
+Fallback if Wi-Fi fails: read each question aloud, ask for a show of hands per option, mentally note the distribution. The 10 questions cover: AI tools used, what they build, data storage, services/APIs, project duration, planning habits, version control, hosting, security practices, and self-assessment on the vibes spectrum.
+-->
+
 ---
 
 # The Vibe Coding Era
@@ -1101,38 +1139,6 @@ If you have your laptop, follow along!
 
 <!--
 OK, let's do this live. I'm going to open GitHub Desktop / VS Code and we'll walk through the whole flow. Create a repo, create a branch, make a change, commit, push, create a pull request, and merge. If you have your laptop, follow along.
--->
-
----
-
-# The Merge Conflict — Don't Panic
-
-What it looks like:
-
-```
-<<<<<<< HEAD
-report_format = "csv"
-=======
-report_format = "xlsx"
->>>>>>> feature/jan-excel-export
-```
-
-<div v-click class="mt-8 text-xl text-center">
-
-**Translation:** "Two people changed the same line. Git doesn't know which version you want. Please decide."
-
-</div>
-
-<div v-click class="mt-4 text-center opacity-75">
-
-Delete the markers → Keep the version you want → Save → Commit. That's it.
-
-</div>
-
-<!--
-At some point, this WILL happen. Two people change the same line. Git can't guess which one is right, so it shows you both versions and asks you to pick. The top section is what's currently in the branch. The bottom section is what you're trying to merge. You delete the markers, keep the version you want (or combine them), save, and commit. That's it.
-
-A merge conflict is git's way of saying 'I don't get paid enough to make this decision for you.'
 -->
 
 ---
