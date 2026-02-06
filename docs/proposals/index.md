@@ -11,7 +11,7 @@ changes are documented before implementation.
 |----|-------|--------|--------------|
 | IP-001 | [Presentation Structure & Complete Slide List](posts/ip-001-presentation-structure-and-slide-list.md) | ✅ Implemented | 2026-02-06 |
 | IP-002 | [PLAN.md Usage & Proposal Methodology Slides](posts/ip-002-plan-md-and-proposal-methodology-slides.md) | 🔍 Under Review | 2026-02-06 |
-| IP-003 | [Audience Knowledge Assessment via Kahoot Quiz](posts/ip-003-audience-knowledge-kahoot-quiz.md) | 📝 Draft | 2026-02-06 |
+| IP-003 | [Audience Workflow Survey via Mentimeter](posts/ip-003-audience-knowledge-kahoot-quiz.md) | ✅ Accepted | 2026-02-06 |
 
 
 **Status Key**:
