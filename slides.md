@@ -180,7 +180,7 @@ That's not a bug, that's a lifestyle.
 <!--
 Let's look at some numbers. 84% of developers are using AI tools — so this isn't fringe, this is mainstream. A quarter of the latest Y Combinator startups are almost entirely AI-generated code. But here's the kicker: nearly half of that AI-generated code has security holes. And 39 million — MILLION — secret keys and passwords were accidentally pushed to GitHub last year.
 
-Quick show of hands — who here has used ChatGPT, Claude, or Cursor to write code or scripts? ...And who has looked at the code it generated? ...And who understood it?
+Remember the survey results? Most of you are already using AI tools to write code and scripts. But how many of you actually look at what it generates? And how many understand it?
 -->
 
 ---
@@ -1946,7 +1946,7 @@ class: text-center
 
 <div class="mt-8 text-sm opacity-75">
 
-Resources available in this presentation's repository:
+Slides & resources: [sibyx.github.io/sustainable-vibecoding](https://sibyx.github.io/sustainable-vibecoding/)
 
 PLAN.md template · .env patterns · Git cheat sheet (Slide 35)
 
@@ -1955,6 +1955,12 @@ PLAN.md template · .env patterns · Git cheat sheet (Slide 35)
 <div class="mt-8 text-lg font-bold">
 
 Go forth and may your vibes be sustainable, your branches be merged,<br>and your API keys be forever environment variables.
+
+</div>
+
+<div class="mt-4 text-xs opacity-40">
+
+CC BY 4.0 · Jakub Dubec
 
 </div>
 
