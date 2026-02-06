@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 date: 2026-02-06
 authors:
   - jdubec
@@ -20,9 +20,9 @@ This proposal defines the full structure, slide-by-slide content, speaker notes,
 
 ## Status
 
-**Status**: Under Review
+**Status**: Implemented
 **Last Updated**: 2026-02-06
-**Implementation**: Not started
+**Implementation**: Complete
 
 ## Problem Statement
 
@@ -91,27 +91,30 @@ All content lives in `slides.md` directly (no `pages/` splitting for now), using
 **Content:**
 - Title: "From Vibecoding to Sustainable Development"
 - Subtitle: "How to make your AI-built tools less fragile, more shareable, and way less terrifying"
-- Author, date, company/context
+- Author: Jakub Dubec
+- FIIT STU logo in the bottom-right corner (image: `https://www.fiit.stuba.sk/buxus/assets/images/logo_fiit.svg` — download to `public/images/fiit-logo.svg` for local use). This is the **only** place the faculty logo appears.
 
 🎤 **Speaker Notes:**
 "Welcome! Today is NOT about turning you into software engineers. I repeat — nobody here needs to learn what a linked list is. Today is about taking the cool things you're already building with AI and making them... survivable. Survivable by your teammates. Survivable by future-you at 3 AM when something breaks."
 
 ---
 
-#### Slide 2: About Me / Credibility Slide
+#### Slide 2: About Me
 **[Layout: image-right]**
 
+**Image (right side):** Speaker photo or GitHub avatar from `https://github.com/Sibyx.png`
+
 **Content:**
-- Brief speaker intro
-- "I write code for a living so you don't have to" angle
-- Fun fact or ice breaker
-- I am from FIIT STU. I am studying wireless networks and worked as software engineer for 10+ years.
-- Faculty of informatics and information technologies on Slovak University of Technology in Bratislava.
+- **Jakub Dubec** (@Sibyx)
+- Cloud Engineer & PhD student — wireless networks
+- Faculty of Informatics and Information Technologies (FIIT), Slovak University of Technology in Bratislava
+- 10+ years as a software engineer
+- jakubdubec.me | github.com/Sibyx
 
 🎤 **Speaker Notes:**
-"Quick intro — I'm [name], I've been writing software for [X] years. I've leaked API keys, I've deleted production databases, I've written code that even I couldn't understand a week later. I'm basically a cautionary tale with a salary. And I'm here to help you avoid my greatest hits."
+"Quick intro — I'm Jakub, I've been writing software for over 10 years and I'm currently doing a PhD at FIIT STU in Bratislava, researching wireless networks. By day I'm a cloud engineer, by night I maintain open-source libraries that apparently 163 people on GitHub depend on — which terrifies me. I've leaked API keys, I've deleted production databases, I've written code that even I couldn't understand a week later. I'm basically a cautionary tale with a salary. And I'm here to help you avoid my greatest hits."
 
-😄 **Joke:** "They say experience is the best teacher. My GitHub history says experience is the most expensive teacher."
+😄 **Joke:** "They say experience is the best teacher. My GitHub history says experience is the most expensive teacher. I once accidentally pushed AWS credentials to a public repo. The bots found them before my CI pipeline even finished running."
 
 ---
 
@@ -1390,16 +1393,17 @@ Your action items:
 
 **Content:**
 - "From Vibecoding to Sustainable Development"
-- Contact info
+- **Jakub Dubec**
+  - jakubdubec.me
+  - github.com/Sibyx
 - Link to this slide deck (hosted on Netlify/Vercel)
 - Resources:
-  - [Git cheat sheet](link)
-  - [.env best practices](link)
-  - [PLAN.md template](link)
-  - [Slidev source code for this presentation](link)
+  - PLAN.md template (included in this repo's `demo/` directory)
+  - .env + .gitignore patterns (included in this repo's `demo/` directory)
+  - Git cheat sheet (Slide 35 of this deck)
 
 🎤 **Speaker Notes:**
-"Thank you! These slides are hosted online — you can revisit them anytime. I've included links to cheat sheets, templates, and everything we discussed. Feel free to reach out if you get stuck on anything. Remember: you're not becoming engineers. You're becoming engineers' favorite kind of colleagues — the ones who plan, document, and don't commit secrets."
+"Thank you! These slides are hosted online — you can revisit them anytime. The demo resources, templates, and cheat sheets are all in the repository. Find me on GitHub as @Sibyx or at jakubdubec.me. Feel free to reach out if you get stuck on anything. Remember: you're not becoming engineers. You're becoming engineers' favorite kind of colleagues — the ones who plan, document, and don't commit secrets."
 
 😄 **Closing joke:** "Go forth and may your vibes be sustainable, your branches be merged, and your API keys be forever environment variables."
 
@@ -1599,7 +1603,7 @@ components/
 
 **Status**: ✅ Resolved
 **Review Date**: 2026-02-06
-**Reviewer**: Claude AI (Opus 4.6)
+**Reviewer**: jdubec
 
 The following questions must be answered before implementation:
 
@@ -1771,7 +1775,9 @@ this correctly.
 
 ## Changelog
 
-| Date | Author | Changes |
-|------|--------|---------|
-| 2026-02-06 | Claude AI (Opus 4.6) | Initial draft with full slide list, speaker notes, and review questions |
+| Date | Author               | Changes |
+|------|----------------------|---------|
+| 2026-02-06 | jdubec               | Initial draft with full slide list, speaker notes, and review questions |
 | 2026-02-06 | Claude AI (Opus 4.6) | Resolved all 5 review questions based on author answers; updated status to Under Review |
+| 2026-02-06 | Claude AI (Opus 4.6) | Added speaker bio (FIIT STU, GitHub, website), FIIT logo on title slide, contact details on closing slide |
+| 2026-02-06 | Claude AI (Opus 4.6) | Implementation complete: wrote all 65 slides in slides.md, downloaded FIIT logo, created demo/ resources. Status → Implemented |
