@@ -5,6 +5,7 @@ title: From Vibecoding to Sustainable Development
 info: |
   ## From Vibecoding to Sustainable Development
   Workshop for PPC/marketing teams on making AI-built tools less fragile, more shareable, and way less terrifying.
+  Much less terrifying
 
   By Jakub Dubec — FIIT STU Bratislava
 class: text-center
