@@ -385,6 +385,207 @@ The magic phrase is: 'Ask me questions before making assumptions.' This changes 
 -->
 
 ---
+
+# PLAN.md Is a Living Document
+
+<div class="text-xl mt-4 mb-6 font-bold opacity-80">
+
+PLAN.md isn't a tombstone — it's a journal.
+
+</div>
+
+```
+BEFORE building          DURING building           AFTER building
+┌──────────────┐        ┌──────────────┐         ┌──────────────┐
+│ Write the    │        │ Update when  │         │ Record what  │
+│ plan         │  ──→   │ reality      │  ──→    │ was actually │
+│              │        │ diverges     │         │ built        │
+└──────────────┘        └──────────────┘         └──────────────┘
+```
+
+<v-clicks class="mt-6">
+
+- The AI discovered the API returns data in a different format? **Update the plan.**
+- You decided to skip a feature? **Note it in the plan.**
+- The finished tool works differently than planned? **The plan reflects reality, not fantasy.**
+
+</v-clicks>
+
+<!--
+Now that you know how to write a plan and hand it to AI, let me tell you the one thing most teams get wrong — they never update the plan. They write it, hand it to Claude, and never look at it again. Then six months later someone reads PLAN.md and it describes a completely different tool than what exists. The plan is only useful if it stays true. When reality changes — and it ALWAYS changes — update the plan. Think of PLAN.md as a journal, not a contract. It evolves with your project. And this idea — keeping the document alive, updating it as you go — becomes even more important when your projects get bigger. Which brings me to something I want to show you...
+-->
+
+---
+
+# The Planning Spectrum
+
+<div class="mt-6">
+
+```
+← Quick & Light                                     Structured & Thorough →
+
+ No Plan         PLAN.md          Implementation        Full RFC / ADR
+                                  Proposals
+    ↓                ↓                  ↓                      ↓
+ "Just vibe"    "20 lines of      "Structured doc        "Enterprise-grade
+                what, why, how"    with lifecycle,        design records"
+                                   alternatives,
+                                   review questions"
+
+     🏠               🏡                 🏢                     🏗️
+ Weekend hack    Team script       Multi-phase            Production
+                                   project                system
+```
+
+</div>
+
+<div v-click class="mt-6 text-center text-xl font-bold">
+
+You don't jump from no plan to enterprise RFC. You grow into it.
+
+</div>
+
+<!--
+Planning isn't binary — it's a spectrum. For a quick script, PLAN.md is perfect. Twenty lines, five minutes, done. But what happens when your tool grows? When it has multiple phases, multiple contributors, and decisions that affect the whole team? That's when you need something more structured. I want to show you what that looks like — not because you need it today, but because you'll recognize the moment when you do.
+-->
+
+---
+layout: two-cols
+layoutClass: gap-8
+---
+
+# Implementation Proposals
+
+### PLAN.md <span class="opacity-60">(you know this)</span>
+
+```
+Quick, informal, 20 lines
+One person writes it
+Lives in project root
+Great for: scripts, small tools
+```
+
+::right::
+
+### Implementation Proposal <span class="opacity-60">(the next level)</span>
+
+```
+Same idea — think before you build
+But with more structure:
+
+✓ Problem: what are we solving?
+✓ Solution: how?
+✓ Alternatives: what else did we consider?
+✓ Trade-offs: what could go wrong?
+```
+
+<div class="mt-4">
+
+```
+Draft → Review → Accepted → Implemented
+           ↓
+       Rejected
+```
+
+</div>
+
+<!--
+An Implementation Proposal is PLAN.md's big sibling. Same core idea — think before you build — but with more structure. Instead of 20 freeform lines, you have defined sections that force you to think about alternatives and risks. And it has a lifecycle — the proposal goes through review before anyone writes code. You don't need to memorize these sections. I want to show you what this actually looks like in practice.
+
+[Speaker: switch to live screen share. Open a real Implementation Proposal from your own project. Walk through the sections briefly — 60-90 seconds. Point out: 'See? Problem, Solution, Alternatives, Trade-offs. That's it. The AI wrote this draft, I reviewed it.' Then switch back to slides.]
+-->
+
+---
+
+# Review Questions — The AI Handoff
+
+<div class="mt-2 mb-4">
+
+The key innovation: **AI writes the proposal, then reviews its own work.**
+
+</div>
+
+<div class="grid grid-cols-2 gap-6">
+<div>
+
+```
+Step 1: You say
+  "Write a proposal for feature X"
+
+Step 2: AI writes the full proposal
+
+Step 3: AI re-reads its own proposal
+  and finds contradictions...
+```
+
+</div>
+<div>
+
+<div class="border border-gray-400 rounded p-4 text-sm">
+
+**Q1: Data Storage Choice**
+
+**Issue**: Proposal says "store in CSV" but also mentions "complex queries needed"
+
+**Question**: Should we use SQLite instead?
+
+**Options**:
+- A) CSV files (simple, portable)
+- B) SQLite (queryable, single file)
+- C) PostgreSQL (if team access needed)
+
+**Answer**: _________ <span class="text-yellow-400">← YOU decide</span>
+
+</div>
+
+</div>
+</div>
+
+<div v-click class="mt-4 text-center font-bold text-lg">
+
+The AI doesn't know what it doesn't know. But it CAN find its own contradictions.
+
+</div>
+
+<!--
+This is my favorite part of the whole methodology. After the AI writes a proposal, it reads it back and generates questions — structured questions with options — about things that don't quite add up. The AI found a contradiction? It asks you. The AI isn't sure about a design choice? It gives you options. You — the human — make the final call. This is the handoff. The AI does the heavy lifting, but YOU make the decisions. It's like having a junior architect who drafts the blueprints and then says 'hey boss, I noticed three things that don't quite work — which way should we go?'
+-->
+
+---
+layout: center
+---
+
+# These Slides Were Planned This Way
+
+<div class="text-lg mt-8">
+
+The slides you're watching **right now** were designed using this exact system.
+
+</div>
+
+<v-clicks class="mt-6">
+
+- **IP-001** proposed the full slide structure, speaker notes, and section order
+- AI (Claude) wrote the first draft
+- AI generated **5 Review Questions** (language, slide count, demo strategy, humor, section order)
+- I answered each question
+- AI applied the resolutions and built the slides
+
+</v-clicks>
+
+<div v-click class="mt-8 text-xl font-bold">
+
+I used this system to build what you're watching. It works.
+
+</div>
+
+<!--
+By the way — this presentation was designed using the exact methodology I just showed you. I didn't just open Claude and say 'make me slides.' I wrote a proposal — IP-001 — that defined every section, every slide, every speaker note. The AI drafted it, then generated five review questions: should the slides be in English or Slovak? How many slides? What's the demo strategy? I answered each one, the AI updated the proposal, and then implemented it. The result is what you're looking at. Let me show you the actual document.
+
+[Speaker: switch to live screen share. Open docs/proposals/posts/ip-001-presentation-structure-and-slide-list.md. Scroll through it briefly — show the Problem Statement, the Detailed Slide List, the Review Questions with filled-in answers. Point out: 'See Q1? I said English slides, Slovak speaking. Q4? I said keep all the jokes. These decisions shaped what you're watching right now.' Keep it to 60-90 seconds. Switch back to slides.]
+-->
+
+---
 layout: two-cols
 layoutClass: gap-8
 ---
